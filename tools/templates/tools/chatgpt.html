@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>THCS PBC: {{item.name}}</title>
+    <title>WIT Chatbot: {{item.name}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -120,10 +121,10 @@
         <h1>WIT AI Chatbot</h1>
         <div id="chat">
             <!-- Initial Conversation -->
-            <div class="assistant-bubble chat-bubble"><b>{{site_name}} THCS Phan Bội Châu:</b> Hỏi tôi bất cứ thứ gì và tôi sẽ trả lời.</div>
+            <div class="assistant-bubble chat-bubble"><b>{{site_name}} WIT AI BOT:</b> Ask me anything, and I will assist you.</div>
         </div>
         <!-- Analysis message -->
-        <div class="analysis-message">Vui lòng đợi.../div>
+        <div class="analysis-message">Please wait...</div>
         <div class="input-group mt-3">
             <input type="text" id="userInput" class="form-control" placeholder="Type your message...">
             <button id="sendMessage" class="btn btn-primary">Send</button>
@@ -161,7 +162,7 @@
             messageDiv.textContent = 'Me: ' + content;
         } else {
             messageDiv.classList.add('assistant-bubble');
-            messageDiv.textContent = 'THCS Phan Bội Châu: ' + content;
+            messageDiv.textContent = 'WIT BOT: ' + content;
         }
         chat.appendChild(messageDiv);
         // Add clearfix to ensure proper alignment
