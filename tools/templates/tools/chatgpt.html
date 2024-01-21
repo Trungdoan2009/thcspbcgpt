@@ -121,12 +121,12 @@
         <h1>WIT AI Chatbot</h1>
         <div id="chat">
             <!-- Initial Conversation -->
-            <div class="assistant-bubble chat-bubble"><b>{{site_name}} WIT AI BOT:</b> Ask me anything, and I will assist you.</div>
+            <div class="assistant-bubble chat-bubble"><b>{{site_name}} THCS PBC:</b> Ask me anything, and I will assist you.</div>
         </div>
         <!-- Analysis message -->
-        <div class="analysis-message">Please wait...</div>
+        <div class="analysis-message">Vui lòng đợi...</div>
         <div class="input-group mt-3">
-            <input type="text" id="userInput" class="form-control" placeholder="Type your message...">
+            <input type="text" id="userInput" class="form-control" placeholder="Hãy nhập...">
             <button id="sendMessage" class="btn btn-primary">Send</button>
             <!-- Loading spinner -->
             <div class="loading-spinner"></div>
@@ -159,10 +159,10 @@
         messageDiv.classList.add('chat-bubble');
         if (role === 'user') {
             messageDiv.classList.add('user-bubble');
-            messageDiv.textContent = 'Me: ' + content;
+            messageDiv.textContent = 'Tôi: ' + content;
         } else {
             messageDiv.classList.add('assistant-bubble');
-            messageDiv.textContent = 'WIT BOT: ' + content;
+            messageDiv.textContent = 'THCS PBC: ' + content;
         }
         chat.appendChild(messageDiv);
         // Add clearfix to ensure proper alignment
